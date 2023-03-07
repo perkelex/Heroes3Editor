@@ -272,5 +272,15 @@ namespace Heroes3Editor
             txtBlock = FindName("Effects") as TextBlock;
             txtBlock.Text = "";
         }
+
+        private void GrantAllSpells(object sender, RoutedEventArgs e)
+        {
+            var component = e.Source as ButtonBase;
+            if (component == null)
+            {
+                return;
+            }
+            _hero.GrantAllSpells();
+        }
     }
 }

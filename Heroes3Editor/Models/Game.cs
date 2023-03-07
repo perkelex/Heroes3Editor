@@ -2,6 +2,7 @@
 using System.Buffers.Binary;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using ICSharpCode.SharpZipLib.GZip;
@@ -271,6 +272,15 @@ namespace Heroes3Editor.Models
 
             int spellBookPosition = BytePosition + Constants.HeroOffsets["SpellBook"] + Constants.Spells[spell];
             _game.Bytes[spellBookPosition] = 0;
+        }
+
+        public void GrantAllSpells()
+        {
+            foreach(var spell in Enumerable.Range(0, 70))
+            {
+                _game.Bytes[BytePosition + Constants.HeroOffsets["Spells"] + spell] = 1;
+                _game.Bytes[BytePosition + Constants.HeroOffsets["SpellBook"]+ spell] = 1;
+            }
         }
 
         public void UpdateCreature(int i, string creature)

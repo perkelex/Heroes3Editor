@@ -114,8 +114,10 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*" />
                         <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
                     </Grid.RowDefinitions>
-                    <GroupBox Header="All Schools" Grid.Row="0" Grid.ColumnSpan="4">
+                    <Button Grid.Row="0" Grid.Column="0" Click="GrantAllSpells">Grant all spells</Button>
+                    <GroupBox Header="All Schools" Grid.Row="1" Grid.ColumnSpan="4">
                         <WrapPanel>
                             <CheckBox ToolTip="Target, enemy troop receives magic damage" Name="Magic_Arrow" Checked="AddSpell" Unchecked="RemoveSpell">
                                 <Label>Magic Arrow</Label>
@@ -132,7 +134,7 @@
                             </CheckBox>
                         </WrapPanel>
                     </GroupBox>
-                    <GroupBox Header="Air Magic" Grid.Row="1" Grid.Column="0">
+                    <GroupBox Header="Air Magic" Grid.Row="2" Grid.Column="0">
                         <StackPanel>
                             <CheckBox ToolTip="Targeted allied unit(s) speed is increased." Name="Haste" Checked="AddSpell" Unchecked="RemoveSpell">
                                 <Label>Haste</Label>
@@ -218,7 +220,7 @@
                             </CheckBox>
                         </StackPanel>
                     </GroupBox>
-                    <GroupBox Header="Earth Magic" Grid.Row="1" Grid.Column="1">
+                    <GroupBox Header="Earth Magic" Grid.Row="2" Grid.Column="1">
                         <StackPanel>
                             <CheckBox ToolTip="Reduces damage taken from hand-to-hand attacks." Name="Shield" Checked="AddSpell" Unchecked="RemoveSpell">
                                 <Label>Shield</Label>
@@ -294,7 +296,7 @@
                             </CheckBox>
                         </StackPanel>
                     </GroupBox>
-                    <GroupBox Header="Fire Magic" Grid.Row="1" Grid.Column="2">
+                    <GroupBox Header="Fire Magic" Grid.Row="2" Grid.Column="2">
                         <StackPanel>
                             <CheckBox ToolTip="Increases the attack skill of target(s) for melee attacks." Name="Bloodlust" Checked="AddSpell" Unchecked="RemoveSpell">
                                 <Label>Bloodlust</Label>
@@ -374,7 +376,7 @@
                             </CheckBox>
                         </StackPanel>
                     </GroupBox>
-                    <GroupBox Header="Water Magic" Grid.Row="1" Grid.Column="3">
+                    <GroupBox Header="Water Magic" Grid.Row="2" Grid.Column="3">
                         <StackPanel>
                             <CheckBox Name="Cure" Checked="AddSpell" Unchecked="RemoveSpell">
                                 <CheckBox.ToolTip>
