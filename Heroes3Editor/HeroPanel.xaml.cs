@@ -162,6 +162,26 @@ namespace Heroes3Editor
             _hero.UpdateSkillLevel(slot, level);
         }
 
+        private void GigaChadSkills(object sender, RoutedEventArgs e)
+        {
+            _hero.UpdateSkill(0, "Logistics");
+            _hero.UpdateSkillLevel(0, 3);
+            _hero.UpdateSkill(1, "Pathfinding");
+            _hero.UpdateSkillLevel(1, 3);
+            _hero.UpdateSkill(2, "Offense");
+            _hero.UpdateSkillLevel(2, 3);
+            _hero.UpdateSkill(3, "Armorer");
+            _hero.UpdateSkillLevel(3, 3);
+            _hero.UpdateSkill(4, "Air Magic");
+            _hero.UpdateSkillLevel(4, 3);
+            _hero.UpdateSkill(5, "Earth Magic");
+            _hero.UpdateSkillLevel(5, 3);
+            _hero.UpdateSkill(6, "Archery");
+            _hero.UpdateSkillLevel(6, 3);            
+            _hero.UpdateSkill(7, "Intelligence");
+            _hero.UpdateSkillLevel(7, 3);
+        }
+
         private void AddSpell(object sender, RoutedEventArgs e)
         {
             var chkBox = e.Source as CheckBox;

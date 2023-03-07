@@ -68,36 +68,38 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Margin="2">
+                    <Button Grid.Row="0" Grid.Column="0" Click="GigaChadSkills">Giga chad skills</Button>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Margin="2">
                         <ComboBox Name="Skill0" ItemsSource="{Binding Path=Skills.Names}" SelectionChanged="UpdateSkill" />
                         <TextBox Name="SkillLevel0" TextChanged="UpdateSkillLevel"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="2">
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Margin="2">
                         <ComboBox Name="Skill1" ItemsSource="{Binding Path=Skills.Names}" SelectionChanged="UpdateSkill" />
                         <TextBox Name="SkillLevel1" TextChanged="UpdateSkillLevel"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" Margin="2">
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2" Margin="2">
                         <ComboBox Name="Skill2" ItemsSource="{Binding Path=Skills.Names}" SelectionChanged="UpdateSkill" />
                         <TextBox Name="SkillLevel2" TextChanged="UpdateSkillLevel"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="3" Margin="2">
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="3" Margin="2">
                         <ComboBox Name="Skill3" ItemsSource="{Binding Path=Skills.Names}" SelectionChanged="UpdateSkill" />
                         <TextBox Name="SkillLevel3" TextChanged="UpdateSkillLevel"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Margin="2">
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Margin="2">
                         <ComboBox Name="Skill4" ItemsSource="{Binding Path=Skills.Names}" SelectionChanged="UpdateSkill" />
                         <TextBox Name="SkillLevel4" TextChanged="UpdateSkillLevel"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Margin="2">
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" Margin="2">
                         <ComboBox Name="Skill5" ItemsSource="{Binding Path=Skills.Names}" SelectionChanged="UpdateSkill" />
                         <TextBox Name="SkillLevel5" TextChanged="UpdateSkillLevel"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2" Margin="2">
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2" Margin="2">
                         <ComboBox Name="Skill6" ItemsSource="{Binding Path=Skills.Names}" SelectionChanged="UpdateSkill" />
                         <TextBox Name="SkillLevel6" TextChanged="UpdateSkillLevel"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="3" Margin="2">
+                    <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="3" Margin="2">
                         <ComboBox Name="Skill7" ItemsSource="{Binding Path=Skills.Names}" SelectionChanged="UpdateSkill" />
                         <TextBox Name="SkillLevel7" TextChanged="UpdateSkillLevel"></TextBox>
                     </StackPanel>
